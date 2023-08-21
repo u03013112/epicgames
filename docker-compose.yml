@@ -1,0 +1,9 @@
+version: "3.2"
+services:
+  epic_free:
+    image: ghcr.io/jackblk/epicgames-freebies-claimer:latest
+    container_name: 'epic_free'
+    volumes:
+      - ./data:/app/data
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
